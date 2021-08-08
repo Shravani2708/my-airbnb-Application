@@ -7,7 +7,7 @@ const progress = new ProgressBar({
    size:2,
    color:"#FE595E",
    className:'z-50',
-   delay:100,
+   delay: 100,
 });
 
 //to connect the progress bar on application
