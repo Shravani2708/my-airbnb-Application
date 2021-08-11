@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { useRouter } from "next/router";
 import {format} from "date-fns";
 import InfoCards from "../components/infoCards";
+import Map from "../components/Map";
 
 
 //props-{searchResults}
@@ -55,7 +56,14 @@ function Search({searchResults}) {
                     ))}
                     </div>
                 </section>
+
+                {/*Map Integration*/ }
+                <section className="hidden xl:inline-flex xl:min-w-[600px]">
+                    {/*to pass the json array objects to map to get latitude and longitute of the images*/}
+                    <Map searchResults={searchResults}/>
+                </section>
             </main>
+            
             <Footer />
         </div>
     );
